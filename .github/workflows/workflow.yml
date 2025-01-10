@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     paths:
-      - 'my-portfolio-project' # Specify the folder path you want to trigger the workflow for
+      - 'my-portfolio-project/**' # Specify the folder path you want to trigger the workflow for
 
 jobs:
   deploy:
