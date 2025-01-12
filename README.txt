@@ -1,33 +1,28 @@
-Hyperspace by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# My Portfolio
 
+## Introduction
+Welcome to my portfolio! This document showcases my skills, projects, and experiences as a Cloud Engineer.
 
-So I've had the wireframe for this particular design kicking around for some time, but with all
-the other interesting (and in some cases, semi-secret) projects I've been working on it took me
-a little while to get to actually designing and coding it. Fortunately, things have eased up
-enough for me to finaly get around to it, so I'm happy to introduce Hyperspace: a fun, blocky,
-one-page design with a lot of color, a bit of animation, and an additional "generic" page template
-(because hey, even one-page sites usually need an interior page or two). Hope you dig it :)
+## Table of Contents
+- [Skills](#skills)
+- [Projects](#projects)
+- [Experience](#experience)
+- [Education](#education)
+- [Contact](#contact)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## Skills
+In this section, I will list the programming languages, frameworks, and tools that I am proficient in.
 
-(* = not included)
+## Projects
+Here, I will provide an overview of some of the notable projects I have worked on. Each project will have a brief description and a link to its repository or live demo.
 
-AJ
-aj@lkn.io | @ajlkn
+## Experience
+I will outline my professional experience as a software developer, including the companies I have worked for, the roles I have held, and the projects I have contributed to.
 
+## Education
+This section will detail my educational background, including any degrees or certifications I have obtained related to software development.
 
-Credits:
+## Contact
+In this final section, I will provide my contact information, such as my email address and links to my social media profiles.
 
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Feel free to customize this template to fit your specific needs and add more sections as necessary. Happy documenting!
