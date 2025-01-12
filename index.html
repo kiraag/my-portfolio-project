@@ -305,39 +305,6 @@
 		<script src="assets/js/main.js"></script>
 
 		<!-- Fetch Visit Count from Lambda -->
-		<script>
-			// Lambda function URL
-			const lambdaFunctionURL = "https://2qvraggz7nwjgrpbzytjzm6unm0ruqbq.lambda-url.us-east-1.on.aws/";
-
-			// Fetch visit count from the Lambda function
-			async function fetchVisitCount() {
-				try {
-					const response = await fetch(lambdaFunctionURL, {
-						method: "GET",
-						headers: {
-							"Content-Type": "application/json"
-						}
-					});
-					if (response.ok) {
-						const data = await response.json();
-						// Assuming the Lambda function returns an object like { visitCount: 123 }
-						const visitCount = data.visitCount || 0;
-
-						// Display the visit count in the footer
-						const visitCountElement = document.getElementById("visit-count");
-						if (visitCountElement) {
-							visitCountElement.textContent = `Page visits: ${visitCount}`;
-						}
-					} else {
-						console.error("Failed to fetch visit count: ", response.statusText);
-					}
-				} catch (error) {
-					console.error("Error fetching visit count: ", error);
-				}
-			}
-
-			// Call the function on page load
-			document.addEventListener("DOMContentLoaded", fetchVisitCount);
 		</script>
 
 	</body>
