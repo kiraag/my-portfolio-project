@@ -151,7 +151,8 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><button type="submit" class="button submit">Send Message</button></li>
+											<li><button id="submitBtn" class="button submit">Send Message</button>
+											</li>
 										</ul>
 									</form>
 								</section>
@@ -237,13 +238,22 @@
 
 			<!-- Form Submission Script -->
 			<script>
-				document.getElementById('submitBtn').addEventListener('click', async () => {
-					const name = document.getElementById('name').value;
-					const email = document.getElementById('email').value;
-					const message = document.getElementById('message').value;
+				document.getElementById('submitBtn').addEventListener('click', async (e) => {
+					e.preventDefault(); // Prevent default form submission
+			
+					const name = document.getElementById('name').value.trim();
+					const email = document.getElementById('email').value.trim();
+					const message = document.getElementById('message').value.trim();
 			
 					if (!name || !email || !message) {
 						alert('All fields are required!');
+						return;
+					}
+			
+					// Basic email validation
+					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+					if (!emailRegex.test(email)) {
+						alert('Please enter a valid email address.');
 						return;
 					}
 			
@@ -264,9 +274,10 @@
 						});
 			
 						if (response.ok) {
-							window.location.href = 'success.html'; // Redirect to the success page
+							window.location.href = 'success.html'; // Redirect to success page
 						} else {
-							alert('Failed to send message. Please try again later.');
+							const errorData = await response.json();
+							alert(`Failed to send message: ${errorData.message || 'Please try again later.'}`);
 						}
 					} catch (error) {
 						console.error('Error:', error);
@@ -274,5 +285,6 @@
 					}
 				});
 			</script>
+			
 	</body>
 </html>
