@@ -261,17 +261,17 @@
 							// Success: Redirect to success.html
 							const responseBody = await response.json();
 							console.log('Response:', responseBody);
-							window.location.replace('success.html');
+							window.location.replace('success.html'); // No changes here
 						} else {
 							// Handle API errors
 							const errorText = await response.text();
 							console.error('API Error Response:', errorText);
-							showErrorMessage(`Failed to send the message. API responded with: ${response.status} ${response.statusText}`);
+							window.location.replace('error.html'); // Redirect to error.html
 						}
 					} catch (error) {
 						// Handle exceptions (e.g., network errors)
 						console.error('Error:', error);
-						showErrorMessage("An error occurred while sending your message. Please try again later.");
+						window.location.replace('error.html'); // Redirect to error.html
 					} finally {
 						resetButton();
 					}
