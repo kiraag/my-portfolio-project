@@ -213,38 +213,36 @@
 				document.addEventListener('DOMContentLoaded', function() {
 					const form = document.getElementById('contactForm');
 					const submitBtn = document.getElementById('submitBtn');
-					
+			
 					submitBtn.addEventListener('click', async function(event) {
 						event.preventDefault();
-						
+			
 						// Disable the button and show loading state
 						submitBtn.disabled = true;
 						submitBtn.textContent = 'Sending...';
-						
+			
 						// Collect form data
 						const formData = {
 							name: form.name.value,
 							email: form.email.value,
 							message: form.message.value
 						};
-						
-						// Prepare payload in the required format
-						const payload = {
-							body: JSON.stringify(formData) // Wrap formData as a string in "body" key
-						};
-						
+			
 						try {
 							const response = await fetch('https://80kvv9enuk.execute-api.us-east-1.amazonaws.com/dev/get-in-touch', {
 								method: 'POST',
 								headers: {
 									'Content-Type': 'application/json'
 								},
-								body: JSON.stringify(payload) // Send the payload
+								body: JSON.stringify(formData) // Send formData directly
 							});
-							
+			
 							if (response.ok) {
+								const responseBody = await response.json();
+								console.log('Response:', responseBody);
 								window.location.replace('success.html'); // Redirect on success
 							} else {
+								console.error('Error response:', await response.text());
 								window.location.replace('error.html'); // Redirect on failure
 							}
 						} catch (error) {
@@ -257,8 +255,7 @@
 						}
 					});
 				});
-				</script>
-				
+			</script>			
 			
 			<!-- Page Visit Counter Script -->
 			<script>
