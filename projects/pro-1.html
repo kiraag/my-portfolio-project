@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Documentation: Personal Portfolio Website</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 30px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin: 10px 0 20px 20px;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background-color: #f1c40f;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .Additionally {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .Additionally h2 {
+      border-bottom: none;
+    }
+
+    .Additionally ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .Additionally ul li {
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: #fff;
+      border-radius: 8px;
+    }
+
+    .footer a {
+      color: #3498db;
+    }
+
+    .footer a:hover {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Title -->
+    <h1>Project Documentation: Personal Portfolio Website</h1>
+
+    <!-- Project Overview -->
+    <div class="section">
+      <h2>Project Overview</h2>
+      <p>This project involved creating a personal portfolio website to showcase my skills, experience, and projects. The website is hosted on AWS and utilizes a variety of cloud services to ensure scalability, reliability, and performance. Additionally, I implemented a CI/CD pipeline using GitHub Actions to automate deployments, ensuring seamless updates to the website.</p>
+    </div>
+
+    <!-- Objectives -->
+    <div class="section">
+      <h2>Objectives</h2>
+      <ul>
+        <li>Creat a professional and responsive portfolio website.</li>
+        <li>Gain hands-on experience with AWS services and CI/CD practices.</li>
+        <li>Implement a serverless architecture for backend functionality.</li>
+        <li>Ensure global accessibility and fast load times.</li>
+        <li>Automate deployment processes for efficiency.</li>
+      </ul>
+    </div>
+
+    <!-- Technologies Used -->
+    <div class="section">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li><span class="highlight">Frontend</span>: HTML, CSS, JavaScript (using HTML5Up template).</li>
+        <li><span class="highlight">Backend</span>: AWS Lambda, API Gateway, DynamoDB.</li>
+        <li><span class="highlight">Hosting & Deployment</span>: AWS S3, CloudFront.</li>
+        <li><span class="highlight">Domain & Routing</span>: GoDaddy (domain purchase), Route 53 (DNS routing).</li>
+        <li><span class="highlight">Source Code Management</span>: GitHub.</li>
+        <li><span class="highlight">CI/CD Pipeline</span>: GitHub Actions for automated deployments to S3.</li>
+      </ul>
+    </div>
+
+    <!-- Key Features -->
+    <div class="section">
+      <h2>Key Features</h2>
+      <ul>
+        <li><span class="highlight">Static Website Hosting</span>: Used AWS S3 to store and serve static files (HTML, CSS, JS).</li>
+        <li><span class="highlight">Global Content Delivery</span>: Configured CloudFront to distribute the website to edge locations.</li>
+        <li><span class="highlight">Contact Form Backend</span>: Created a serverless backend using AWS Lambda and API Gateway.</li>
+        <li><span class="highlight">Custom Domain</span>: Purchased a domain via GoDaddy and configured DNS routing using Route 53.</li>
+        <li><span class="highlight">Responsive Design</span>: Used a pre-designed template from HTML5Up for a modern and mobile-friendly design. (Also modified and created some new templates with the help of AI.</li>
+        <li><span class="highlight">Source Code Management</span>: Used GitHub for version control.</li>
+        <li><span class="highlight">Continuous Deployment</span>: Set up GitHub Actions to automate deployments to S3.</li>
+      </ul>
+    </div>
+
+    <!-- Challenges & Solutions -->
+    <div class="section">
+      <h2>Challenges & Solutions</h2>
+      <ul>
+        <li><span class="highlight">Challenge</span>: Ensuring low latency for global users.<br>
+          <span class="highlight">Solution</span>: Used CloudFront to cache content at edge locations.</li>
+        <li><span class="highlight">Challenge</span>: Implementing a serverless backend for the contact form.<br>
+          <span class="highlight">Solution</span>: Leveraged Lambda and API Gateway for a scalable solution.</li>
+        <li><span class="highlight">Challenge</span>: Automating deployments to S3.<br>
+          <span class="highlight">Solution</span>: Configured GitHub Actions for CI/CD.</li>
+      </ul>
+    </div>
+
+    <!-- Outcome -->
+    <div class="section">
+      <h2>Outcome</h2>
+      <ul>
+        <li>Successfully deployed a fully functional portfolio website.</li>
+        <li>Gained practical experience with AWS services, serverless architecture, and CI/CD pipelines.</li>
+        <li>Achieved fast load times and global accessibility.</li>
+        <li>Streamlined the development process with automated deployments using GitHub Actions.</li>
+      </ul>
+    </div>
+
+    <!-- Future Improvements -->
+    <div class="section">
+      <h2>Future Improvements</h2>
+      <ul>
+        <li>We can add authentication and user management using AWS Cognito.</li>
+        <li>We can integrate a blog section using AWS Amplify.</li>
+        <li>We can implement analytics using AWS CloudWatch or Google Analytics.</li>
+        <li>We can enhance the CI/CD pipeline to include testing and staging environments.</li>
+      </ul>
+    </div>
+
+    <!-- Additionally -->
+    <div class="Additionally">
+      <h2>Additionally</h2>
+      <ul>
+        <li>If you'd like a full-length video on this project, 
+            feel free to <span class="highlight">send me a message</span> through <span class="highlight">Get in Touch</span> section on my website. 
+            I'd love to hear your feedback and suggestions!</li>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Created with ❤️ by SAI KIRAN DANDA</p>
+    </div>
+  </div>
+</body>
+</html>
