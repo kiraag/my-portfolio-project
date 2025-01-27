@@ -3864,12 +3864,62 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
+			/* Sidebar styling */
 			#sidebar {
-				display: none;
+				display: block;
+				width: 100%;
+				height: auto;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background-color: #312450;
+				z-index: 1000;
+				padding: 0.1em 0.2em; /* Minimal padding to reduce height */
+				box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 			}
-
+		
+			/* Inner content of the sidebar */
+			#sidebar .inner {
+				display: flex;
+				justify-content: space-around; /* Adjusted spacing */
+				align-items: center;
+			}
+		
+			/* Navigation styling */
+			#sidebar nav ul {
+				display: flex;
+				justify-content: space-around; /* Equal spacing between links */
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+		
+			#sidebar nav ul li {
+				flex: 1; /* Distribute items equally */
+				text-align: center;
+			}
+		
+			#sidebar nav a {
+				font-size: 0.5em; /* Reduced font size for better fit */
+				color: #fff;
+				text-decoration: none;
+				padding: 0.2em 0; /* Minimal padding to save space */
+				display: block;
+				transition: background-color 0.3s ease;
+				white-space: nowrap; /* Prevent wrapping */
+			}
+		
+			#sidebar nav a:hover {
+				background-color: rgba(255, 255, 255, 0.15); /* Subtle hover effect */
+			}
+		
+			/* Ensure the sidebar doesn't cover the content below */
+			body {
+				padding-top: 2em; /* Adjust padding to match the reduced sidebar height */
+			}
 		}
+		
 
 /* Intro */
 
