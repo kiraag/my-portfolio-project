@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
-![Portfolio - Screenshot](./images/design.png)  
-*(Replace the above line with the actual image path or URL of your portfolio screenshot)*
+![Portfolio - Screenshot](my-portfolio-project/images/design.png)  
 
 ## Project Overview
 This project involved creating a personal portfolio website to showcase my skills, experience, and projects. The website is hosted on AWS and utilizes a variety of cloud services to ensure scalability, reliability, and performance. Additionally, I implemented a CI/CD pipeline using GitHub Actions to automate deployments, ensuring seamless updates to the website.
