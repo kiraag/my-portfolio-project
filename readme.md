@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![my-portfolio-project/images/design.png](#)  
+![Portfolio - Screenshot](./images/design.png)  
 *(Replace the above line with the actual image path or URL of your portfolio screenshot)*
 
 ## Project Overview
