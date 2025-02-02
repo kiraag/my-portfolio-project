@@ -1,6 +1,7 @@
 # Personal Portfolio Website
 
 ![Design Preview](https://github.com/kiraag/my-portfolio-project/blob/main/images/%20design.png?raw=true)
+![Design Preview](https://github.com/kiraag/my-portfolio-project/blob/main/images/architechture.png?raw=true)
 
 ## Project Overview
 This project involved creating a personal portfolio website to showcase my skills, experience, and projects. The website is hosted on AWS and utilizes a variety of cloud services to ensure scalability, reliability, and performance. Additionally, I implemented a CI/CD pipeline using GitHub Actions to automate deployments, ensuring seamless updates to the website.
