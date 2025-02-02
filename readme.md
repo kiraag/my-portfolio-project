@@ -1,6 +1,8 @@
 # Personal Portfolio Website
 
 ![Design Preview](https://github.com/kiraag/my-portfolio-project/blob/main/images/%20design.png?raw=true)
+
+## Architecture diagram
 ![Design Preview](https://github.com/kiraag/my-portfolio-project/blob/main/images/architechture.png?raw=true)
 
 ## Project Overview
